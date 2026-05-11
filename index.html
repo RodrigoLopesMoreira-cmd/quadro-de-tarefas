@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kanban Board</title>
+</head>
+
+<body>
+  <header>
+    <input id="input" type="text" placeholder="Digite aqui sua tarefa" autofocus />
+    <input id="inputDescricao" type="text" placeholder="Digite aqui a descrição" />
+    <button  id="addTarefa">adicionar</button>
+  </header>
+
+  <main>
+    <div class="coluna">
+      <h2 id="tituloPendente">Pendentes</h2>
+      <div class="styleList" id="listaPendente"></div>
+    </div>
+
+    <div class="coluna">
+      <h2 id="tituloAndamento">Andamento</h2>
+      <div class="styleList" id="listaAndamento"></div>
+    </div>
+
+    <div class="coluna">
+      <h2 id="tituloConcluido">Concluidas</h2>
+      <div class="styleList" id="listaConcluida"></div>
+    </div>
+
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
