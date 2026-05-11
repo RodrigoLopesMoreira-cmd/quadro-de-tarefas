@@ -54,7 +54,11 @@ function renderizar() {
     let showStatus = document.createElement('p')
     let action = document.createElement('div')
     let tarefaEl = document.createElement('div')
-
+    const coresStatus = {
+      pendente: 'gray',
+      andamento: 'orange',
+      concluido: 'green'
+    }
     tarefaEl.classList.add('tarefaEl')
     action.classList.add('actions')
     status.classList.add('status')
@@ -91,17 +95,7 @@ function renderizar() {
       listaC.appendChild(tarefaEl)
     }
 
-    if (tarefaObj.status === 'pendente') {
-      tarefaEl.style.borderLeft = '5px solid gray'
-    }
-
-    if (tarefaObj.status === 'andamento') {
-      tarefaEl.style.borderLeft = '5px solid orange'
-    }
-
-    if (tarefaObj.status === 'concluido') {
-      tarefaEl.style.borderLeft = '5px solid green'
-    }
+    tarefaEl.style.borderLeft = `5px solid ${coresStatus[tarefaObj.status]}`
 
     btnDelete.onclick = () => {
       tarefas.splice(index, 1)
