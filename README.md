@@ -43,7 +43,7 @@ Aplicação de gerenciamento de tarefas inspirada em sistemas Kanban, desenvolvi
 
 ## 📸 Preview1
 
-<img width="100%" src=".img/img1.png">
+<img width="100%" src="./img/img2.png">
 
 ---
 
